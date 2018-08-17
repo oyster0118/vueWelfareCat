@@ -5,7 +5,7 @@ import { Toast } from 'element-ui';
 axios.defaults.timeout = 5000;
 axios.defaults.withCredentials = true;
 axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded;charset=UTF-8';
-axios.defaults.baseURL = process.env.NODE_ENV === 'production' ? 'should be buildUrl' : 'should be devUrl';// TODO: need comfirm
+axios.defaults.baseURL = process.env.NODE_ENV === 'production' ? 'http://gym8.wdado.com:8080/' : 'http://gym8.wdado.com:8080/';// TODO: need comfirm
 
 //  http request 拦截器
 axios.interceptors.request.use((config) => {

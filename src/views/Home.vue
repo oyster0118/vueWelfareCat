@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-    <img src="../assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
     <el-button @click="getUserInfo">click me!</el-button>
   </div>
@@ -17,6 +16,9 @@ export default {
   components: {
     HelloWorld,
     'el-button': Button,
+  },
+  created() {
+    console.log(this.$route);
   },
   methods: {
     ...mapActions('user', [

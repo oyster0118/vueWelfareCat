@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <p v-show="user_info.user_id">from:{{user_info.nickname}}</p>
+    <p v-show="user_info.user_id">{{user_info.nickname}}</p>
     <p>
       For guide and recipes on how to configure / customize this project,<br>
       check out the
